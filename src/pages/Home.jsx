@@ -12,7 +12,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Redirect to login if not authenticated
+  // redirect to login if not authenticated
   useEffect(() => {
     if (!loading && !isLoggedIn) {
       navigate('/login');
@@ -108,7 +108,7 @@ const Home = () => {
     <div className="min-h-screen bg-gray-100 p-8">
       <header className="flex justify-between items-center mb-8">
         <div>
-          <h1 className="text-4xl font-extrabold text-gray-800">My Notes</h1>
+          <h1 className="text-4xl font-extrabold text-gray-800">Dashboard</h1>
           {user && <p className="text-gray-600 mt-1">Welcome, {user.username}!</p>}
         </div>
         <button
@@ -156,7 +156,7 @@ const Home = () => {
           <div className="flex space-x-2">
             <button
               type="submit"
-              className="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md shadow-lg"
+              className="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md shadow-lg"
             >
               {editingNote ? 'Update Note' : 'Add Note'}
             </button>

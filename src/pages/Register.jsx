@@ -18,9 +18,9 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-[#eceff1]">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6 text-center text-blue-800">Register</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">Nodepad</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-gray-700">Username</label>
@@ -44,13 +44,13 @@ const Register = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="w-full bg-[#4d646f] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           >
             Register
           </button>
         </form>
-        <p className="mt-4 text-center text-gray-600">
-          Already have an account? <Link to="/login" className="text-blue-500 hover:underline">Login here</Link>
+        <p className="mt-4 text-center text-gray-400">
+          Already have an account? <Link to="/login" className="text-gray-500 hover:underline">Login here</Link>
         </p>
       </div>
     </div>
